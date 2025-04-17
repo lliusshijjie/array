@@ -1,0 +1,10 @@
+^D:\C++\ARRAY\BUILD\CMAKEFILES\18B4E3D43521FAA8A715B296085EDC44\GENERATE.STAMP.RULE
+setlocal
+D:\Cmake\bin\cmake.exe -SD:/C++/array -BD:/C++/array/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/C++/array/build/array.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
